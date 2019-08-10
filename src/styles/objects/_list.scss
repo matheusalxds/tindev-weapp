@@ -1,3 +1,7 @@
+@import "../settings/spaces";
+@import "../settings/border";
+@import "../settings/color";
+
 .list {
   list-style: none;
   display: grid;
@@ -28,7 +32,6 @@
 
       & p {
         color: lighten($text-color, 40%);
-        margin-top: $space-md;
       }
     }
   }
@@ -46,7 +49,6 @@
       border-radius: $border-radius;
       background-color: $color-white;
       cursor: pointer;
-
 
       &:hover img {
         transition: transform .3s ease-in-out;

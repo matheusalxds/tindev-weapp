@@ -5,14 +5,11 @@ import classNames from 'classnames';
 import css from './Button.module.scss';
 
 function Button(props) {
-  const { type = 'text', lg, md, xs, primary, danger, success, children } = props;
+  const { type, lg, md, danger, children } = props;
   const classes = classNames({
     [css.btn]: true,
     [css['btn--lg']]: lg,
     [css['btn--md']]: md,
-    [css['btn--xs']]: xs,
-    [css['btn--primary']]: primary,
-    [css['btn--success']]: success,
     [css['btn--danger']]: danger,
   });
 
@@ -23,6 +20,17 @@ function Button(props) {
 
 Button.defaultProps = {
   children: PropTypes.object.isRequired,
+  type: PropTypes.string,
+  lg: PropTypes.bool,
+  md: PropTypes.bool,
+  danger: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  type: 'button',
+  lg: false,
+  md: false,
+  danger: false,
 };
 
 export default Button;

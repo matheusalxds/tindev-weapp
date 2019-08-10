@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import Main from '../../components/Main/Main';
 import Logo from '../../components/UI/Icons/Logo';
 import Loading from '../../components/Loading/Loading';
@@ -37,7 +37,9 @@ function Dev(props) {
 
   return (
     <Main>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
       <List data={data} meId={id} onConfirm={onConfirm} />
     </Main>
   );

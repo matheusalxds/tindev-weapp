@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './Form.module.scss';
-
 import Button from '../../../components/Button/Button';
 
 function Form(props) {
@@ -15,7 +13,7 @@ function Form(props) {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Digite seu usuário do GitHub"
