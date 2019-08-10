@@ -1,0 +1,10 @@
+@import "../settings/spaces";
+@import "../settings/color";
+@import "../settings/border";
+
+.main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: calc(#{$space-lg} * 3) 0;
+  text-align: center;
+}

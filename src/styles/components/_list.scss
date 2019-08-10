@@ -1,0 +1,57 @@
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $space-lg;
+
+  & li {
+    display: flex;
+    flex-direction: column;
+
+    & img {
+      max-width: 100%;
+      border-radius: $border-radius $border-radius 0 0;
+    }
+
+    & footer {
+      flex: 1;
+      background: $color-white;
+      border: solid 1px $border-color;
+      padding: calc(#{$space-md} / 1.5) $space-lg;
+      text-align: left;
+      border-radius: 0 0 $border-radius $border-radius;
+
+      & strong {
+        font-size: 1rem;
+        color: $text-color;
+      }
+
+      & p {
+        color: lighten($text-color, 40%);
+        margin-top: $space-md;
+      }
+    }
+  }
+
+  &__buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $space-xs;
+
+    & button {
+      height: 50px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+      border: none;
+      border-radius: $border-radius;
+      background-color: $color-white;
+      cursor: pointer;
+
+
+      &:hover img {
+        transition: transform .3s ease-in-out;
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

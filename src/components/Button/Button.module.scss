@@ -1,0 +1,29 @@
+@import "../../styles/settings/border";
+@import "../../styles/settings/color";
+@import "../../styles/settings/spaces";
+
+.btn {
+  border-radius: $border-radius;
+  font-size: 1rem;
+  color: $color-white;
+
+  &--danger {
+    background-color: $color-danger;
+  }
+
+  &--lg {
+    padding: $btn-padding-horizontal-lg $btn-padding-vertical-lg;
+  }
+
+  &--md {
+    padding: $btn-padding-horizontal-md $btn-padding-vertical-md;
+  }
+
+  &--sm {
+    padding: $btn-padding-horizontal-sm $btn-padding-vertical-sm;
+  }
+
+  &--xs {
+    padding: $btn-padding-horizontal-xs $btn-padding-vertical-xs;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../styles/settings/spaces";
+@import "../../../styles/settings/color";
+
+.form {
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+
+  & input {
+    margin-top: $space-md;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 $space-sm;
+    font-size: 16px;
+    color: $input-text-color;
+
+    &::placeholder {
+      color: $placeholder-text-color;
+    }
+  }
+
+  & button {
+    margin-top: $space-xs;
+  }
+}
