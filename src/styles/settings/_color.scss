@@ -1,7 +1,13 @@
 // Colors
-$color-white: #f8f8f2;
+$color-white: #fff;
+$color-foreground: #f8f8f2;
 $color-danger: #ff5555;
 $color-purple: #bd93f9;
+$color-success: #50fa7b;
+
+// Text
+$text-color: #44475a;
+$text-list-color: $color-success;
 
 // BG
 $default-bg-color: #282a36;
@@ -10,11 +16,8 @@ $default-bg-color: #282a36;
 $border-color: #ddd;
 
 // Form
-$input-text-color: #44475a;
+$input-text-color: $text-color;
 $placeholder-text-color: lighten($input-text-color, 30%);
-
-// Text
-$text-color: #333;
 
 // Outline
 $outline-color: $color-purple;
