@@ -6,10 +6,20 @@
   border-radius: $border-radius;
   font-size: 1rem;
   color: $color-foreground;
+  cursor: pointer;
 
   &--danger {
     border-color: $color-danger;
     background-color: $color-danger;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--transparent {
+    border: none;
+    background-color: transparent;
   }
 
   &--lg {
@@ -18,13 +28,5 @@
 
   &--md {
     padding: $btn-padding-horizontal-md $btn-padding-vertical-md;
-  }
-
-  &--sm {
-    padding: $btn-padding-horizontal-sm $btn-padding-vertical-sm;
-  }
-
-  &--xs {
-    padding: $btn-padding-horizontal-xs $btn-padding-vertical-xs;
   }
 }

@@ -15,8 +15,8 @@ function List(props) {
             <p>{item.bio}</p>
           </footer>
           <div className='list__buttons'>
-            <Like userId={item._id} meId={meId} onConfirm={onConfirm} />
             <Dislike userId={item._id} meId={meId} onConfirm={onConfirm} />
+            <Like userId={item._id} meId={meId} onConfirm={onConfirm} />
           </div>
         </li>
       ))}
