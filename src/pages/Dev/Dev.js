@@ -38,7 +38,6 @@ function Dev(props) {
 
     socket.on('match', dev => {
       setMatchDev(dev);
-      console.log('DEU MATCH COM ', dev);
     });
 
   }, [id]);
